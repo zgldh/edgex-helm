@@ -1,9 +1,12 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{.Values.edgex.app.redis}}-sentinel
 spec:
   replicas: {{.Values.edgex.replicas.redis}}
+  selector:
+    matchLabels:
+      org.edgexfoundry.service: {{.Values.edgex.app.redis}}
   template:
     metadata:
       labels:

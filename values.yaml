@@ -53,58 +53,58 @@ edgex:
     core:
       command:
         repository: edgexfoundry/docker-core-command-go
-        tag: 1.2.1
+        tag: 2.1.0
         pullPolicy: IfNotPresent
       data:
         repository: edgexfoundry/docker-core-data-go
-        tag: 1.2.1
+        tag: 2.1.0
         pullPolicy: IfNotPresent
       metadata:
         repository: edgexfoundry/docker-core-metadata-go
-        tag: 1.2.1
+        tag: 2.1.0
         pullPolicy: IfNotPresent
       consul:
         repository: edgexfoundry/docker-edgex-consul
-        tag: 1.2.0
+        tag: 2.1.0
         pullPolicy: IfNotPresent
     support:
       notifications:
         repository: edgexfoundry/docker-support-notifications-go
-        tag: 1.2.1
+        tag: 2.1.0
         pullPolicy: IfNotPresent
       rulesengine:
-        repository: emqx/kuiper
-        tag: 0.4.2-alpine
+        repository: lfedge/ekuiper
+        tag: 1.4.4-alpine
         pullPolicy: IfNotPresent
       scheduler:
         repository: edgexfoundry/docker-support-scheduler-go
-        tag: 1.2.1
+        tag: 2.1.0
         pullPolicy: IfNotPresent
     appservice:
       rules:
         repository: edgexfoundry/docker-app-service-configurable
-        tag: 1.2.0
+        tag: 2.1.0
         pullPolicy: IfNotPresent
     device:
       virtual:
         repository: edgexfoundry/docker-device-virtual-go
-        tag: 1.2.1
+        tag: 2.1.0
         pullPolicy: IfNotPresent
       rest:
         repository: edgexfoundry/docker-device-rest-go
-        tag: 1.1.1
+        tag: 2.1.0
         pullPolicy: IfNotPresent
     ui:
       repository: edgexfoundry/docker-edgex-ui-go
-      tag: 1.2.1
+      tag: 2.1.0
       pullPolicy: IfNotPresent
     system:
       repository: edgexfoundry/docker-sys-mgmt-agent-go
-      tag: 1.2.1
+      tag: 2.1.0
       pullPolicy: IfNotPresent
     redis:
       repository: quay.io/smile/redis
-      tag: 4.0.6r2
+      tag: 2.1.0
       pullPolicy: IfNotPresent
 
   # replicas defines the number of replicas in a Deployment for the respective application

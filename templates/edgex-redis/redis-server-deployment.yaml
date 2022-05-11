@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   # Pay attention to the redis-role label at runtime. The self-determination logic in the image sets this value accordingly.
@@ -9,6 +9,9 @@ metadata:
     redis-node: "true"
 spec:
   replicas: {{.Values.edgex.replicas.redis}}
+  selector:
+    matchLabels:
+      org.edgexfoundry.service: {{.Values.edgex.app.redis}}
   template:
     metadata:
       labels:
