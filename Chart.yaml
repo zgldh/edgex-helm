@@ -13,5 +13,5 @@ sources:
 - https://github.com/edgexfoundry/edgex-go
 - https://github.com/zgldh/edgex-helm
 maintainers:
-- name: Wenbin Zhang
-  email: zhangwb@shinetechchina.com
+- name: zgldh
+  email: zgldh@hotmail.com
